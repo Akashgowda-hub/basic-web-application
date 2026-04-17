@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_REGION = "ap-south-2"
         ACCOUNT_ID = "448049801172"
-        REPO_NAME = "basic-web-application"
+        REPO_NAME = "basic_web_application"
         IMAGE = "${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${REPO_NAME}:${BUILD_NUMBER}"
         ECR_URL = "${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
     }
